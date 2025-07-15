@@ -1,0 +1,5 @@
+equation([X],X,X).
+equation([X|XS], X+E1, R) :- equation(XS, E1, R1), R is X+R1.
+equation([X|XS], X-E1, R) :- equation(XS, E1, R1), R is X-R1.
+equation([X|XS], X*E1, R) :- equation(XS, E1, R1), R is X*R1.
+equation([X|XS], X/E1, R) :- equation(XS, E1, R1), Z is R1, Z !=! 0, R is X/R1.
