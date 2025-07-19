@@ -7,12 +7,12 @@ Um jogo estilo Akinator desenvolvido em Prolog para adivinhar cientistas. Pense 
 
 1.  **Certifique-se de ter um interpretador Prolog instalado.** (Ex: SWI-Prolog).
 
-2.  **Clone este repositório** ou copie o conteúdo do arquivo `akinator_cientistas.prolog`.
+2.  **Clone este repositório** ou copie o conteúdo do arquivo `main.prolog`.
 
 3.  **Abra seu interpretador Prolog** e carregue o arquivo principal do jogo:
 
     ```prolog
-    ?- [akinator_cientistas].
+    ?- [main].
     ```
 
 O jogo fará uma série de perguntas de sim ou não para tentar adivinhar o cientista em sua mente.
@@ -22,6 +22,9 @@ O jogo fará uma série de perguntas de sim ou não para tentar adivinhar o cien
 
 O Akinator de Cientistas utiliza a lógica declarativa do Prolog para representar o conhecimento sobre diversos cientistas. Através de um conjunto de regras e fatos, o programa faz perguntas ao jogador, refinando suas possibilidades até chegar a uma conclusão.
 
+## 📄 Referência
+
+Ao desenvolver me baseei no repositório disponível em  [Pokenator](https://github.com/UnBParadigmas2024-2/2024.2_G3_Logico_Pokenator/tree/main).
 
 ## 🤝 Contribuições
 
