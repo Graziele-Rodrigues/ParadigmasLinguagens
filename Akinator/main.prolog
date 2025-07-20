@@ -7,7 +7,7 @@
 :- [inferencia].
 
 
-:- initialization(startGame).
+%:- initialization(startGame).
 
 carregar_base :-
     consult('database.prolog'),
@@ -56,7 +56,7 @@ perguntar_e_adicionar_cientista :-
 
 perguntar :-
     contador(Cont),
-    ( Cont > 20 ->
+    ( Cont > 30 ->
         writeln('Numero maximo de perguntas atingido. Me conte sobre o cientista que voce estava pensando.'),
         perguntar_e_adicionar_cientista,
         jogar_novamente

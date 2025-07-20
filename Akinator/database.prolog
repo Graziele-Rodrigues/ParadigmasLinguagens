@@ -217,4 +217,3 @@ premio_nobel(katherine_Johnson, nao_tem_premio_nobel).
 premio_nobel(neil_deGrasse_Tyson, nao_tem_premio_nobel).
 premio_nobel(sheldon_Cooper, tem_premio_nobel).
 premio_nobel(amy_Farrah_Fowler, tem_premio_nobel).
-
