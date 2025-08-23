@@ -52,3 +52,17 @@ deIntercalate [x] = ([x], [])
 deIntercalate (x:y:rest) =
   let (evens, odds) = deIntercalate rest
   in (x:evens, y:odds)
+
+
+imerge :: [Int] -> [Int] -> [Int]
+imerge [] ys = ys
+imerge xs [] = xs
+imerge (x:xs) (y:ys)
+    | x <= y    = x : imerge xs (y:ys)
+    | otherwise = y : imerge (x:xs) ys
+
+
+take' :: [a] -> Int -> [a]
+take' _ 0 = []
+take' [] _ = []
+take' (x:xs) n = x : take' xs (n-1)
